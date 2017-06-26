@@ -61,7 +61,7 @@ RUN export DEBIAN_FRONTEND='noninteractive' && \
                 /etc/privoxy/config && \
     echo 'ControlSocket /etc/tor/run/control' >>/etc/tor/torrc && \
     echo 'ControlSocketsGroupWritable 1' >>/etc/tor/torrc && \
-    echo 'ControlPort 0.0.0.0:9051' >>/etc/tor/torrc && \
+    echo 'ControlPort 9051' >>/etc/tor/torrc && \
     echo 'CookieAuthentication 0' >>/etc/tor/torrc && \
     echo 'CookieAuthFileGroupReadable 1' >>/etc/tor/torrc && \
     echo 'CookieAuthFile /etc/tor/run/control.authcookie' >>/etc/tor/torrc && \
